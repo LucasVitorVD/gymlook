@@ -18,9 +18,7 @@
         }
 
         function photoSrc(p) {
-          return p.photo && p.photo.length > 100
-            ? `data:image/jpeg;base64,${p.photo}`
-            : null;
+          return p.photo || null;
         }
 
         const grid = document.getElementById("productGrid");
