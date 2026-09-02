@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gymlook — Moda Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,900;1,500&family=Dancing+Script:wght@500;700&family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loader-line"></div>
+
+    <header id="siteHeader">
+      <nav class="main-nav" id="mainNav">
+        <a href="#top" class="nav-link">Início</a>
+        <a href="#catalogo" class="nav-link">Catálogo</a>
+        <a href="#sobre" class="nav-link">Sobre</a>
+        <a href="#contato" class="nav-link">Contato</a>
+      </nav>
+      <div class="header-logo">
+        <svg
+          class="g-mark"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            stroke="currentColor"
+            stroke-width="1.4"
+          />
+          <text
+            x="50"
+            y="67"
+            text-anchor="middle"
+            font-family="'Dancing Script', cursive"
+            font-weight="700"
+            font-size="60"
+            fill="currentColor"
+          >
+            g
+          </text>
+        </svg>
+      </div>
+      <div class="header-actions">
+        <button class="burger" id="burgerBtn" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <section class="hero" id="top">
+      <span class="eyebrow">Moda Fitness · Coleção 2026</span>
+      <h1>
+        <span class="gym serif">Gym</span>
+        <span class="look">look</span>
+      </h1>
+      <p class="sub">
+        Peças feitas para o movimento — do treino ao dia a dia. Caimento que
+        acompanha, cor que assina.
+      </p>
+      <div class="cta-row">
+        <a href="#catalogo" class="btn">Ver catálogo</a>
+        <a href="#sobre" class="btn ghost">Nossa história</a>
+      </div>
+      <div class="scroll-cue"><span>Role</span><span class="line"></span></div>
+    </section>
+
+    <div class="highlights">
+      <span>Frete grátis acima de R$299</span>
+      <span class="dot">·</span>
+      <span>Feito para o movimento</span>
+      <span class="dot">·</span>
+      <span>Nova coleção</span>
+    </div>
+
+    <section class="section" id="catalogo">
+      <div class="section-head">
+        <div>
+          <span class="tag">Catálogo</span>
+          <h2>Produtos Gymlook</h2>
+        </div>
+        <p>
+          22 peças em produção, com variações de cor e tamanho por item. Clique
+          em qualquer peça para ver detalhes e fazer seu pedido pelo WhatsApp.
+        </p>
+      </div>
+
+      <div class="filters" id="filters">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="blusas">Blusas</button>
+        <button class="filter-btn" data-filter="conjuntos">Conjuntos</button>
+        <button class="filter-btn" data-filter="macacoes">Macacões</button>
+        <button class="filter-btn" data-filter="tops">Tops</button>
+        <button class="filter-btn" data-filter="shorts">Shorts</button>
+        <button class="filter-btn" data-filter="acessorios">Acessórios</button>
+      </div>
+
+      <div class="grid" id="productGrid"></div>
+    </section>
+
+    <section
+      class="section"
+      id="sobre"
+      style="padding-top: 120px; padding-bottom: 120px"
+    >
+      <div class="visual">
+        <svg
+          class="g-mark"
+          viewBox="0 0 100 100"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="50" cy="50" r="46" stroke="#FF6DAA" stroke-width="1.4" />
+          <text
+            x="50"
+            y="67"
+            text-anchor="middle"
+            font-family="'Dancing Script', cursive"
+            font-weight="700"
+            font-size="60"
+            fill="#FF4F9A"
+          >
+            g
+          </text>
+        </svg>
+      </div>
+      <div class="copy">
+        <span class="tag">Sobre a Gymlook</span>
+        <h2>Roupa de treino desenhada para quem não pausa a rotina.</h2>
+        <p>
+          A Gymlook nasceu para vestir mulheres que treinam, trabalham e vivem
+          no mesmo ritmo. Cada peça é pensada em tecido de alta compressão,
+          costuras planas e um caimento que acompanha o movimento — sem abrir
+          mão de estilo.
+        </p>
+        <p>
+          Rosa vívido na régua, preto e branco na base: uma paleta enxuta para
+          uma marca que não precisa gritar para ser lembrada.
+        </p>
+        <div class="stat-row">
+          <div><strong>22</strong><span>Peças no catálogo</span></div>
+          <div><strong>6</strong><span>Categorias</span></div>
+          <div><strong>100%</strong><span>Feito para o treino</span></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="strip">
+      <div class="cell black">
+        <img
+          src="/public/FOTOS EDITADAS 30-08/gymlook_look_preto.jpg"
+          alt="Gymlook — look preto"
+        />
+      </div>
+      <div class="cell pink">
+        <img
+          src="/public/FOTOS EDITADAS 30-08/gymlook_conjunto_pink.jpg"
+          alt="Gymlook — conjunto pink"
+        />
+      </div>
+      <div class="cell white">
+        <img
+          src="/public/FOTOS EDITADAS 30-08/gymlook_look_azul_marinho.jpg"
+          alt="Gymlook — look azul marinho"
+        />
+      </div>
+      <div class="cell blush">
+        <img
+          src="/public/FOTOS EDITADAS 30-08/gymlook_conjunto_lilas.jpg"
+          alt="Gymlook — conjunto lilás"
+        />
+      </div>
+    </div>
+
+    <section class="section" id="contato">
+      <div class="inner">
+        <span class="tag">Fique por dentro</span>
+        <h2>Para você, por você.</h2>
+        <p>Acompanhe os lançamentos, promoções e bastidores da Gymlook.</p>
+        <div class="contact-links">
+          <a
+            href="https://instagram.com/gymlook.oficial"
+            target="_blank"
+            rel="noopener"
+            >Instagram · @gymlook.oficial</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-logo">
+        <svg class="g-mark" viewBox="0 0 100 100" fill="none">
+          <circle
+            cx="50"
+            cy="50"
+            r="46"
+            stroke="currentColor"
+            stroke-width="1.4"
+          />
+          <text
+            x="50"
+            y="67"
+            text-anchor="middle"
+            font-family="'Dancing Script', cursive"
+            font-weight="700"
+            font-size="60"
+            fill="currentColor"
+          >
+            g
+          </text>
+        </svg>
+        <span
+          class="serif"
+          style="font-size: 0.9rem; letter-spacing: 0; text-transform: none"
+          >Gymlook © 2026</span
+        >
+      </div>
+      <div class="social">
+        <a
+          href="https://instagram.com/gymlook.oficial"
+          target="_blank"
+          rel="noopener"
+          aria-label="Instagram"
+          ><svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.6"
+          >
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r="1" /></svg
+        ></a>
+      </div>
+      <span>Feito com carinho no Brasil</span>
+    </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+      <div class="modal">
+        <div class="modal-media" id="modalMedia"></div>
+        <div class="modal-body">
+          <button class="modal-close" id="modalClose" aria-label="Fechar">
+            &times;
+          </button>
+          <span class="cat" id="modalCat">Categoria</span>
+          <h3 id="modalName">Nome do produto</h3>
+          <div class="price" id="modalPrice">R$ 0,00</div>
+
+          <div class="option-block">
+            <label>Tamanho</label>
+            <div class="size-row" id="sizeRow"></div>
+          </div>
+
+          <div class="option-block">
+            <label>Cor</label>
+            <div class="color-row" id="colorRow"></div>
+          </div>
+
+          <div class="option-block">
+            <label>Quantidade</label>
+            <div class="qty-row">
+              <button class="qty-btn" id="qtyMinus">−</button>
+              <span class="qty-num" id="qtyNum">1</span>
+              <button class="qty-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+
+          <button class="btn add-btn" id="whatsappBtn">
+            Pedir pelo WhatsApp
+          </button>
+          <p class="desc" id="modalDesc">
+            Tecido de alta compressão com toque macio, costura plana antiatrito
+            e modelagem que acompanha cada movimento. Disciplina looks good on
+            you.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
