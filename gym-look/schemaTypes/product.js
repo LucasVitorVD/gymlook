@@ -102,6 +102,12 @@ export const product = {
       options: { list: ['U', 'M', 'G'] },
       validation: (Rule) => Rule.required().min(1).error('Selecione pelo menos um tamanho'),
     },
+    {
+      name: 'stock',
+      title: 'Quantidade em estoque',
+      type: 'number',
+      validation: (Rule) => Rule.required().min(0).error('Informe a quantidade em estoque'),
+    },
   ],
   preview: {
     select: { title: 'name', subtitle: 'category' },

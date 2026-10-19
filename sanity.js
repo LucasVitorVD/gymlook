@@ -12,6 +12,7 @@ export async function fetchProducts() {
       description,
       sizes,
       colors,
+      stock,
       "images": images[] {
         colorName,
         "imageUrl": image.asset->url
@@ -29,6 +30,7 @@ export async function fetchProducts() {
     price: p.price,
     desc: p.description,
     sizes: p.sizes || [],
+    stock: p.stock || 0,
     colors: (p.colors || []).map((c) => c.name),
     colorHex: (p.colors || []).reduce((acc, c) => { acc[c.name] = c.hex; return acc; }, {}),
     images: (p.images || []).map((img) => ({
